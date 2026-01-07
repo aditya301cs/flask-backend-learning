@@ -65,29 +65,37 @@ This is enforced using:
     
 ##  Available Web Endpoints
 
-1. 1️⃣ Home Endpoint
+1. Home Endpoint
 
     ```bash
     http://127.0.0.1:5000/
+    ```
+    Purpose:
 
+    Verifies that the Flask server is running
+
+    Response:
     ```bash
-    http://127.0.0.1:5000/user-add
+    {
+    "message": "Hello, World!"
+    }
 
-2. 2️⃣ Add User with Profile
+    ```
+2. Add User with Profile
 
     ```bash
     http://127.0.0.1:5001/user-add
-    
+    ```
     ```bash
     {
     "message": "User and Profile added successfully!"
     }
-
-3. 3️⃣ Get All Users with Profiles
+    ```
+3. Get All Users with Profiles
 
     ```bash
     http://127.0.0.1:5000/users
-    
+    ```
     ```bash
     {
         "message": [
@@ -98,12 +106,12 @@ This is enforced using:
             }
         ]
     }
-
-4. 4️⃣ Get All Profiles with User Names
+    ```
+4. Get All Profiles with User Names
 
     ```bash
     http://127.0.0.1:5000/profiles
-    
+    ```
     ```bash
     [
         {
@@ -112,3 +120,4 @@ This is enforced using:
             "user_name": "John Doe"
         }
     ]
+  ```
